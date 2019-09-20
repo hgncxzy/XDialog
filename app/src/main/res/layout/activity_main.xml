@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".TopDialogActivity"
+    tools:ignore="HardcodedText">
+
+    <Button
+        android:id="@+id/top_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从屏幕顶部滑出的 Dialog" />
+
+    <Button
+        android:id="@+id/confirm_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认取消对话框" />
+
+    <Button
+        android:id="@+id/loading_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载中对话框" />
+</LinearLayout>

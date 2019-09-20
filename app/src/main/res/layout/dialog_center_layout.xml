@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="少林寺"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="#FFFFAA00"
+                android:textSize="15sp"
+                 />
+
+            <TextView
+                android:id="@+id/tvUID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="1.3dp"
+                android:text="UID:00000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvMargin"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000000" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_fengexian"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFDDDDDD"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSendMSG"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="发消息"
+                android:textColor="#FF333333"
+                android:textSize="12sp"
+                tools:ignore="KeyboardInaccessibleWidget" />
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="主页"
+                android:textColor="#FF333333"
+                android:textSize="12sp"
+                tools:ignore="KeyboardInaccessibleWidget" />
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="+关注"
+                android:textColor="#FFFFAA00"
+                android:textSize="12sp"
+                tools:ignore="KeyboardInaccessibleWidget" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
