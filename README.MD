@@ -1,6 +1,6 @@
 ### 效果图
 
-
+- ![效果演示图](https://github.com/hgncxzy/XDialog/blob/master/gif/GIF.gif)
 
 ### 加载对话框
 
