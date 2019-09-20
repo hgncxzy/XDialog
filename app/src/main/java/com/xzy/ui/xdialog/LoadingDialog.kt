@@ -1,6 +1,3 @@
-/*
- * Copyright 2015-2019 Hive Box.
- */
 
 package com.xzy.ui.xdialog
 
