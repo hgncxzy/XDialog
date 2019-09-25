@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         confirm_dialog.setOnClickListener {
-            val dialog = ConfirmDialog(
+            val confirmDialog = ConfirmDialog(
                 context = this,
                 content = "需要显示的内容",
                 title = "标题",
@@ -30,12 +30,34 @@ class MainActivity : AppCompatActivity() {
                 negativeClickBlock = {
                     Toast.makeText(this, "取消", Toast.LENGTH_SHORT).show()
                 })
-            dialog.show()
+            confirmDialog.show()
         }
 
         loading_dialog.setOnClickListener {
             val loadingDialog = LoadingDialog(this)
             loadingDialog.show("加载中")
+        }
+
+        bottom_custom_dialog.setOnClickListener {
+            val bottomDialog = BottomDialog(
+                context = this,
+                btn1Text = "test1",
+                btn2Text = "test2",
+                btn3Text = "test3",
+                btn1ClickBlock = {
+                    Toast.makeText(this, "1", Toast.LENGTH_SHORT).show()
+                },
+                btn2ClickBlock = {
+                    Toast.makeText(this, "2", Toast.LENGTH_SHORT).show()
+                },
+                btn3ClickBlock = {
+                    Toast.makeText(this, "3", Toast.LENGTH_SHORT).show()
+                },
+                confirmClickBlock = {
+                    Toast.makeText(this, "confirm", Toast.LENGTH_SHORT).show()
+                }
+            )
+            bottomDialog.show()
         }
 
     }
