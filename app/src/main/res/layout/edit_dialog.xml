@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/edit_dialog_bg"
+    tools:ignore="MergeRootFrame,Overdraw,SpUsage">
+
+    <LinearLayout
+        android:id="@+id/llPresetArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="Overdraw">
+
+        <LinearLayout
+            android:id="@+id/llIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:paddingTop="24dp"
+            android:paddingRight="24dp">
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:maxEms="10"
+            android:text="请输入盘点数量"
+            android:textColor="#333333"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:background="@drawable/custom_edit_bg_shape"
+            android:singleLine="true"
+            android:focusable="true"
+            tools:ignore="SpUsage" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:id="@+id/llActionArea"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+           >
+
+            <Button
+                android:id="@+id/btnNegative"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textColor="#333333"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="取消"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#cccccc" />
+
+            <Button
+                android:id="@+id/btnPositive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textColor="#333333"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="确定"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

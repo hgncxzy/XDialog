@@ -60,5 +60,18 @@ class MainActivity : AppCompatActivity() {
             bottomDialog.show()
         }
 
+        edit_custom_dialog.setOnClickListener {
+
+            val editDialog = EditDialog(
+                context = this,
+                positiveClickBlock = {
+                    Toast.makeText(this, "确定--"+it.text, Toast.LENGTH_SHORT).show()
+                },
+                negativeClickBlock = {
+                    Toast.makeText(this, "取消", Toast.LENGTH_SHORT).show()
+                })
+            editDialog.show()
+        }
+
     }
 }
